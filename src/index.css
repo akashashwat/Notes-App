@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+:root {
+  background-image: radial-gradient(
+    circle 1500px at -2.9% 42.5%,
+    rgba(247, 234, 163, 1) 0%,
+    rgba(236, 180, 238, 0.56) 46.4%,
+    rgba(163, 203, 247, 1) 100.7%
+  );
+}
+
+html {
+  height: 100%;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  box-sizing: inherit;
+}
+
+.App {
+  font-family: "Nunito", sans-serif;
+}
+
+.heading {
+  padding: 1px;
+  color: #232d3f;
+  text-align: center;
+  border-radius: 4px;
+  text-transform: uppercase;
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+}
+
+.add-btn {
+  background-color: #ea4c89;
+  border-radius: 6px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  outline: none;
+  padding: 5px 12px;
+  position: absolute;
+  right: 30px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.add-btn:active {
+  background-color: #f082ac;
+}
+
+.save-btn,
+.edit-btn {
+  border-style: none;
+  color: #424443;
+  cursor: pointer;
+  position: relative;
+  outline: none;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.edit-btn:hover,
+.save-btn:hover {
+  color: #16c12a;
+}
+
+.del-btn,
+.cancel-btn {
+  border-style: none;
+  color: #424443;
+  cursor: pointer;
+  position: relative;
+  outline: none;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.del-btn:hover,
+.cancel-btn:hover {
+  color: #ea2222;
+}
+
+form.create-note {
+  position: relative;
+  width: 90%;
+  min-width: 280px;
+  max-width: 450px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 15px;
+  border-radius: 7px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+form.create-note input,
+form.create-note textarea {
+  width: 100%;
+  border: none;
+  padding: 2px;
+  outline: none;
+  font-size: 1.1em;
+  font-family: inherit;
+  resize: none;
+}
+
+hr {
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.container {
+  margin-top: 4rem;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 45px;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+.counter {
+  justify-content: flex-end;
+  display: flex;
+}
+
+.note {
+  border-radius: 7px;
+  padding: 10px 15px;
+  margin-bottom: 40px;
+  position: relative;
+  width: 240px;
+  float: left;
+  color: #232d3f;
+  background: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+}
+
+.note p {
+  font-size: 1em;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.edit input {
+  outline: none;
+  width: 100%;
+  border: 1px solid #dedede;
+  border-radius: 5px;
+  font-family: inherit;
+  padding: 5px 5px;
+  margin: 0px -6px;
+  resize: none;
+  font-size: 1em;
+  background: rgba(242, 242, 244, 0.584);
+}
+
+.edit textarea {
+  outline: none;
+  width: 100%;
+  border: 1px solid #dedede;
+  border-radius: 5px;
+  font-family: inherit;
+  padding: 5px 5px;
+  margin: 0px -6px;
+  resize: none;
+  font-size: 1em;
+  background: rgba(242, 242, 244, 0.584);
+}
+
+.button {
+  background: rgba(243, 241, 241, 0.604);
+  padding: 5px 5px;
+  border-radius: 6px;
+  margin: 0px -6px;
+
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #dedede;
+}
+
+.note-count {
+  margin-right: 10px;
+  display: inline-block;
+  background: #fff;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.note h1 {
+  font-size: 1.1em;
+}
+
+footer {
+  text-align: center;
+  margin-top: auto;
+  width: 100%;
+  height: 2.5rem;
+  position: absolute;
+  bottom: 0;
+}
+
+footer p {
+  color: rgb(171, 171, 171);
+}
+
+@media all and (max-width: 765px) {
+  footer {
+    display: none;
+  }
+}
